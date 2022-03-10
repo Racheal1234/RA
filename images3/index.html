@@ -1,0 +1,153 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        </head><body><tittle>Barber Shop Website Dsign</tittle>
+        
+          
+        <meta name="viewport" content="width=device-width, initial-scale =1">
+        
+    
+    
+        <section id="banner">
+            <img src="./index_files/logo2.jpeg" class="logo">
+            <div class="banner-text">
+              <h1>Hair Studio</h1>
+              <p>Style Your Hair Is Style Your Life</p>
+              <div class="banner-btn">
+              <a href="http://127.0.0.1:5500/index.html#"><span></span>Find Out</a>
+              <a href="http://127.0.0.1:5500/index.html#"><span></span>Read More</a>
+            </div>
+            </div>
+
+        </section>
+        <div id="sideNav" style="right: -250px;">
+            <nav>
+                <ul>
+                  <li><a href="http://127.0.0.1:5500/index.html#">HOME</a></li>
+                  <li><a href="http://127.0.0.1:5500/index.html#">FEATURES</a></li>
+                  <li><a href="http://127.0.0.1:5500/index.html#">SERVICES</a></li>
+                  <li><a href="http://127.0.0.1:5500/index.html#">TESTIMONIES</a></li>
+                  <li><a href="http://127.0.0.1:5500/index.html#">MEET US</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="./index_files/menu.png" id="menu">
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--Features-->
+
+            <section id="feature">
+                <div class="tittle-text">
+                    <p>FEATURES</p>
+                    <h1>Why Choose Us</h1>
+                </div>
+                <div class="feature-box">
+                    <div class="feature">
+                        <h1>Experienced Staffs</h1>
+                        <div class="features-desc">
+                            <div class="feature-icon">
+                                <i class="fa fa-shield"></i>
+                            </div>
+                            <div class="feature-text">
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Inventore harum exercitationem, soluta illo .</p>
+                            </div>
+                           
+                        </div>
+                        <h1>Pre Booking Online</h1>
+                        <div class="features-desc">
+                            <div class="feature-icon">
+                                <i class="fa fa-check-square-0"></i>
+                            </div>
+                            <div class="feature-text">
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Inventore harum exercitationem, soluta illo .</p>
+                            </div>
+                           
+                        </div>
+                        <h1>Affordable Cost</h1>
+                        <div class="features-desc">
+                            <div class="feature-icon">
+                                <i class="fa fa-shield"></i>
+                            </div>
+                            <div class="feature-text">
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Inventore harum exercitationem, soluta illo .</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="features-img">
+                        <img src="./index_files/image3.jpeg">
+                    </div>
+                </div>
+            </section>
+
+        
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var manu = document.getElementById("menu")
+            
+            sideNav.style.right = "-250px"
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right ="0";
+                    menu.src ="images3/menu2.png";
+                }
+                else{
+                    sideNav.style.right = "-250";
+                    menu.src ="images3/menu2.png";
+                }
+            }
+        </script>
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<link rel="stylesheet" href="./index_files/style.css"><link rel="stylesheet" href="./index_files/font-awesome.min.css"></body></html>
